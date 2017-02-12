@@ -577,8 +577,89 @@
 				.main.style3.secondary {
 					background: #f5f6f7;
 				}
+ 
+ /* @media commands below added 02-12-17 */
 
+		body.is-touch .main {
+			background-attachment: scroll !important;
+		}
 
+		@media screen and (max-width: 1920px) {
+
+			.main.style2 .content {
+				width: 40%;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.main.style2 .content {
+				width: 50%;
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			.main.style2 .content {
+				width: 60%;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.main.fullscreen {
+				height: auto !important;
+			}
+
+			.main.style1 {
+				padding: 4em 15px 4em 15px;
+			}
+
+				.main.style1 h2 {
+					font-size: 3em;
+				}
+
+			.main.style2 {
+				padding: 6em 15px 6em 15px;
+			}
+
+				.main.style2:before, .main.style2:after {
+					display: none !important;
+				}
+
+				.main.style2 .button.anchored {
+					display: none;
+				}
+
+				.main.style2 .content {
+					width: 100%;
+					max-width: 100%;
+					text-align: center;
+					-moz-transform: none;
+					-webkit-transform: none;
+					-ms-transform: none;
+					transform: none;
+				}
+
+			.main.style3 {
+				text-align: center;
+				padding: 3em 10px 3em 10px;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.main > .content {
+				max-width: calc(100% - 1.5em);
+			}
+
+		}
+
+ /* end of @media commands */
 
 
 	/* Dark */
